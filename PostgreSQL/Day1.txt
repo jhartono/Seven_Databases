@@ -1,0 +1,12 @@
+1.
+SELECT * FROM pg_class
+WHERE relkind = 'r' and relnamespace = 2200;
+
+2.
+SELECT c.country_name FROM events e
+INNER JOIN venues v ON e.venue_id = v.venue_id
+INNER JOIN countries c on v.country_code = c.country_code
+WHERE e.title = 'LARP Club';
+
+3.
+ALTER TABLE venues ADD COLUMN active boolean DEFAULT TRUE;
