@@ -19,4 +19,4 @@ db.articles.insert(\{ author : "Jeffry Hartono", email : "jeffry.hartono@gmail.c
 5.\
 db.articles.update(\{ _id : ObjectId("50af182e93f14856cffb03d4") \}, \{ $set : \{ comments : [\{ author : "Yuyun Hartono", text : "Awesome!!" \}] \} \})\
 \
-6. }
+6. Use load(). If the file exists in the same directory as 'mongo', you only need the filename; otherwise, a full path is required}
